@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/linList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/player_header_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_player_header"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+            <ImageButton
+                android:id="@+id/btnBackFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_backplaylist"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#FFFFFFFF"
+                android:background="@null"
+                android:focusable="false"
+                android:singleLine="true"
+                android:cursorVisible="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_marginLeft="11dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_gravity="center"
+                android:layout_weight="5"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/song1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:textOn="Папки"
+                android:textOff="Песни"
+                android:layout_gravity="center"
+                android:id="@+id/switchFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/folder"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#000000">
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#242424"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/list_selector" />
+
+        </LinearLayout>
+    </LinearLayout>
+

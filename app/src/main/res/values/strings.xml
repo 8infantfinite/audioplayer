@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AudioPlayer by Igor Pisarevich</string>
+    <string name="SongTitle">Название песни</string>
+    <string name="countSongs">%1$s/%2$s</string>
+
+</resources>
